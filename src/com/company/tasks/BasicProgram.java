@@ -75,4 +75,22 @@ public class BasicProgram {
 
     }
 
+    /**
+     * https://www.codewars.com/kata/age-range-compatibility-equation/
+     */
+    public static String datingRange(int age) {
+        double min, max;
+
+        if (age <= 14) {
+            min = age - 0.1 * age;
+            max = age + 0.1 * age;
+        }
+        else {
+            min = (age / 2) + 7;
+            max = (age - 7) * 2;
+        }
+
+        return (int)min + "-" + (int)max;
+    }
+
 }
