@@ -29,4 +29,36 @@ public class BasicProgram {
     public static boolean isDivisible(int wallLength, int pixelSize) {
         return wallLength % pixelSize == 0;
     }
+
+    /**
+     * https://www.codewars.com/kata/jennys-secret-message
+     */
+    public static String greet(String name) {
+
+        if(name.equals("Johnny")){
+            return "Hello, my love!";
+        }
+        else
+            return String.format("Hello, %s!", name);
+    }
+
+    /**
+     * https://www.codewars.com/kata/convert-to-binary
+     */
+    public static int toBinary(int n) {
+        String result = Integer.toBinaryString(n);
+        return Integer.parseInt(result);
+    }
+
+
+    /**
+     * https://www.codewars.com/kata/beginner-series-number-2-clock/
+     */
+    public static int Past(int h, int m, int s)
+        {
+            return s * 1000 + m * 60000 + h * 3600000;
+        }
+
+
+
 }
