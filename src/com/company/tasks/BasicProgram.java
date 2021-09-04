@@ -106,8 +106,9 @@ public class BasicProgram {
     }
 
     public static double convertToCelsius(int temperature) {
-        double celsius1 = (temperature - 32) * (5.0/9.0);
-        return celsius1;
+        double celsius;
+        celsius = (temperature - 32) * (5.0/9.0);
+        return celsius;
     }
 
 }
