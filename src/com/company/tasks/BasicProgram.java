@@ -86,7 +86,7 @@ public class BasicProgram {
             max = age + 0.1 * age;
         }
         else {
-            min = (age / 2) + 7;
+            min = (age / 2.0) + 7;
             max = (age - 7) * 2;
         }
 
