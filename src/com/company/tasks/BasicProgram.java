@@ -55,10 +55,24 @@ public class BasicProgram {
      * https://www.codewars.com/kata/beginner-series-number-2-clock/
      */
     public static int Past(int h, int m, int s)
-        {
+    {
             return s * 1000 + m * 60000 + h * 3600000;
+    }
+
+    /**
+     * https:https://www.codewars.com/kata/return-negative
+     */
+    public static int makeNegative(final int x) {
+
+        int negative;
+        if(x > 0){
+            negative = -x;
+        }else{
+            negative = x;
         }
 
+        return negative;
 
+    }
 
 }
